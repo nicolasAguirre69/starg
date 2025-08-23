@@ -15,12 +15,12 @@ type ButtonConfig = {
 
 const buttons: ButtonConfig[] = [
   {
-    label: "Get started",
+    label: "Ver mas →",
     to: "/planes",
     variant: "default",
   },
   {
-    label: "Streamline raises $12M from Roba Ventures →",
+    label: "Soy ISP →",
     to: "/about",
     variant: "secondary",
   },

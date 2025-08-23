@@ -9,11 +9,11 @@ import { useRef } from "react";
 
 // Arreglo de imágenes con URLs únicas y diferentes colores
 const images = [
-  "https://via.placeholder.com/600x400/3B82F6/FFFFFF?text=Imagen+1",
-  "https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Imagen+2",
-  "https://via.placeholder.com/600x400/10B981/FFFFFF?text=Imagen+3",
-  "https://via.placeholder.com/600x400/F59E0B/FFFFFF?text=Imagen+4",
-  "https://via.placeholder.com/600x400/8B5CF6/FFFFFF?text=Imagen+5",
+  "img/BANNER9.webp",
+  "img/BANNER11.webp",
+  "img/BANNER10.webp"
+  
+  
 ];
 
 export default function CarouselLayout() {
@@ -21,7 +21,7 @@ export default function CarouselLayout() {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
+    <div className="w-full max-w-6xl mx-auto px-4 hover:scale-105 transition-transform duration-300">
       <Carousel
         plugins={[plugin.current]}
         opts={{
@@ -32,22 +32,18 @@ export default function CarouselLayout() {
         <CarouselContent>
           {images.map((imagen, index) => (
             <CarouselItem key={index}>
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-3/2 items-center justify-center p-6">
+
                     <img
                       src={imagen}
                       alt={`Imagen ${index + 1}`}
-                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                      className="rounded-lg aspect-3/2 object-cover"
                       loading="lazy"
                     />{" "}
-                  </CardContent>
-                </Card>
-              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
+      <p></p>
     </div>
   );
 }

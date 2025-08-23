@@ -254,7 +254,7 @@ export default function PlansCarousel() {
 
         {/* CTA final */}
         <div className="mt-10 sm:mt-12 text-center px-4">
-          <p className="text-xs sm:text-sm lg:text-base text-secondary-foreground">
+          {/* <p className="text-xs sm:text-sm lg:text-base text-secondary-foreground">
             ¿Necesitas un plan personalizado?{" "}
             <a
               href="#"
@@ -262,7 +262,17 @@ export default function PlansCarousel() {
             >
               Contáctanos
             </a>
-          </p>
+          </p>*/}
+        {/* Botón */}
+          <Button
+            variant={"gradient"}
+            size="lg"
+            className=" text-sm sm:text-base"
+          >
+            <Phone className="h-5 w-5 mr-2" />
+                Descubre nuestros planes
+            <ChevronRight className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>

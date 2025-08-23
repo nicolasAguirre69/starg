@@ -52,14 +52,6 @@ const benefits: BenefitItem[] = [
     gradient: "from-green-500 to-green-700",
   },
   {
-    title: "Seguridad Avanzada",
-    description:
-      "Protección contra malware y firewall integrado en todos los planes.",
-    icon: Shield,
-    color: "bg-red-500",
-    gradient: "from-red-500 to-red-700",
-  },
-  {
     title: "Soporte 24/7",
     description: "Atención al cliente disponible todo el día, todos los días.",
     icon: Clock,
@@ -75,29 +67,6 @@ const benefits: BenefitItem[] = [
     gradient: "from-indigo-500 to-indigo-700",
   },
   {
-    title: "Cloud Storage",
-    description: "100GB de almacenamiento en la nube incluido con tu plan.",
-    icon: Cloud,
-    color: "bg-cyan-500",
-    gradient: "from-cyan-500 to-cyan-700",
-  },
-  {
-    title: "App Móvil",
-    description:
-      "Controla tu red desde cualquier lugar con nuestra aplicación móvil.",
-    icon: Smartphone,
-    color: "bg-pink-500",
-    gradient: "from-pink-500 to-pink-700",
-  },
-  {
-    title: "Cobertura Nacional",
-    description:
-      "Servicio disponible en todo el territorio nacional sin costos adicionales.",
-    icon: Globe,
-    color: "bg-teal-500",
-    gradient: "from-teal-500 to-teal-700",
-  },
-  {
     title: "Asesoría Personalizada",
     description:
       "Expertos en tecnología te ayudan a elegir el mejor plan para ti.",
@@ -109,7 +78,7 @@ const benefits: BenefitItem[] = [
 
 export default function BenefitsGrid() {
   return (
-    <section className="w-full">
+    <section className="bg-white w-full pt-12 pb-8 md:pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">

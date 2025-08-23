@@ -3,8 +3,9 @@ import HeroSection from "@/components/layout/HeroSection";
 import Navbar from "@/components/layout/Navbar";
 import CarouselPlans from "@/components/layout/CarouselPlans";
 import Benefits from "@/components/layout/Benefits";
+import UserProtection from "@/components/layout/UserProtection";
 import ContactForm from "@/components/layout/ContactForm";
-
+import Description from "@/components/layout/Description";
 function Home() {
   return (
     <div className="min-h-screen">
@@ -14,27 +15,33 @@ function Home() {
           <Navbar />
           <HeroSection />
         </div>
-
-        {/* Carrusel de Canales */}
+        <div className="flex flex-col">
+          <Description />
+        </div>        
+        {/* Sección de Planes */}
         <div className="">
-          <CarouselChanels />
-        </div>
+          <CarouselPlans />
+        </div>          
       </div>
 
-      {/* Sección de Planes */}
-      <div className="bg-muted pb-8 md:pb-12">
-        <CarouselPlans />
+      {/* Carrusel de Canales */}
+      <div className=" pb-8 md:pb-12">
+        <CarouselChanels />
       </div>
 
       {/* Beneficios */}
-      <div className="bg-muted pb-8 md:pb-12">
+      <div className="">
         <Benefits />
       </div>
-
+      
+      <div className="">
+        <UserProtection />
+      </div>
       {/* Formulario de Contacto */}
+
       <div className="bg-background">
         <ContactForm />
-      </div>
+      </div>      
     </div>
   );
 }

@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <BrowserRouter>
-        <App />
+        <App /> 
       </BrowserRouter>
     </ThemeProvider>
   </StrictMode>
