@@ -19,7 +19,8 @@ interface RouteConfig {
 // Arreglo de rutas
 const routes: RouteConfig[] = [
   { path: "/", component: Home, exact: true },
-  { path: "/Planes", component: Plans },
+  { path: "/plans", component: Plans },
+
   { path: "/about", component: About },
   { path: "/contact", component: Contact },
   { path: "/Tele", component: Tele },

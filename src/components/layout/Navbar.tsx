@@ -18,9 +18,10 @@ interface Item {
 }
 
 const items: Item[] = [
-  { name: "Planes", link: "/products" },
+  { name: "Inicio", link: "/" },
+  { name: "Internet", link: "/plans" },
   { name: "Television", link: "/tele" },
-  { name: "About us", link: "/about" },
+  { name: "Sobre Nosotros", link: "/about" },
   { name: "Pricing", link: "/pricing" },
   { name: "FAQ", link: "/faq" },
   { name: "Contact", link: "/contact" },
@@ -36,12 +37,13 @@ export default function Navbar({classnameText = ""}) {
         <img
           src="/logo.svg"
           alt="Company Logo"
-          className="w-28 md:w-32 h-8 md:h-10 object-contain"
+          className="w-36 md:w-44 h-auto object-contain" 
           onError={(e) => {
             e.currentTarget.src =
-              "https://via.placeholder.com/128x40/3B82F6/FFFFFF?text=Logo";
+              "https://via.placeholder.com/180x60/3B82F6/FFFFFF?text=Logo";
           }}
         />
+
       </Link>
 
       {/* Desktop Navigation */}
@@ -51,14 +53,15 @@ export default function Navbar({classnameText = ""}) {
             <NavigationMenuItem key={index}>
               <NavigationMenuLink asChild>
                 <Link
-                  to={item.link}
-className={cn(
-  "text-sm font-medium px-3 py-2 rounded-md hover:bg-accent transition-colors",
-  classnameText
-)}
-                >
-                  {item.name}
-                </Link>
+  to={item.link}
+  className={cn(
+    "text-base md:text-lg font-semibold px-4 py-2 rounded-md hover:bg-accent transition-colors",
+    classnameText
+  )}
+>
+  {item.name}
+</Link>
+
               </NavigationMenuLink>
             </NavigationMenuItem>
           ))}
