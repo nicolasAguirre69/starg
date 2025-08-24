@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "@/pages/Home";
 import Footer from "@/components/layout/Footer";
 import About from "@/pages/About";
+import Tele from "@/pages/Tele";
 import Contact from "@/pages/Contact";
 import Plans from "@/pages/Plans";
 import NotFound from "@/pages/NotFound";
@@ -18,9 +19,10 @@ interface RouteConfig {
 // Arreglo de rutas
 const routes: RouteConfig[] = [
   { path: "/", component: Home, exact: true },
+  { path: "/Planes", component: Plans },
   { path: "/about", component: About },
   { path: "/contact", component: Contact },
-  { path: "/products", component: Plans },
+  { path: "/Tele", component: Tele },
   { path: "*", component: NotFound },
 ];
 

@@ -8,7 +8,7 @@ import ContactForm from "@/components/layout/ContactForm";
 import Description from "@/components/layout/Description";
 function Home() {
   return (
-    <div className="min-h-screen">
+    <>
       {/* Sección Hero con Navbar */}
       <div>
         <div className="flex flex-col">
@@ -17,32 +17,31 @@ function Home() {
         </div>
         <div className="flex flex-col">
           <Description />
-        </div>        
+        </div>
         {/* Sección de Planes */}
-        <div className="">
+        <div className="bg-muted">
           <CarouselPlans />
-        </div>          
+        </div>
       </div>
 
       {/* Carrusel de Canales */}
-      <div className=" pb-8 md:pb-12">
+      <div className="">
         <CarouselChanels />
       </div>
 
-      {/* Beneficios */}
-      <div className="">
+      <div className="bg-muted">
         <Benefits />
       </div>
-      
+
       <div className="">
         <UserProtection />
       </div>
       {/* Formulario de Contacto */}
 
-      <div className="bg-background">
+      <div className="bg-muted">
         <ContactForm />
-      </div>      
-    </div>
+      </div>
+    </>
   );
 }
 

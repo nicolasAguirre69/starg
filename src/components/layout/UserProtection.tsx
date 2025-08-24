@@ -31,11 +31,16 @@
                     Conoce y ejerce tus derechos como usuario, respaldados por una
                     política clara y transparente.
                 </p>
-                <button className="px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-none hover:bg-blue-700 transition">
+                <a
+                    href="https://www.crcom.gov.co/es/micrositios/comunicados-como-es"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-none hover:bg-blue-700 transition"
+                    >
                     Más información
-                </button>
+                </a>
             </div>
-            </div>
+        </div>
 
             {/* Control parental */}
             <div className="bg-white rounded-2xl shadow-none hover:shadow-xl transition-shadow duration-300 overflow-hidden">
@@ -52,9 +57,14 @@
                     Herramientas que te permiten gestionar y supervisar el acceso a
                     contenido para proteger a tu familia.
                 </p>
-                <button className="px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-none hover:bg-blue-700 transition">
+                <a
+                    href="https://www.mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/53254:Usa-las-herramientas-de-control-parental-en-estas-vacaciones"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-none hover:bg-blue-700 transition"
+                    >
                     Más información
-                </button>
+                </a>
             </div>
             </div>
 
@@ -73,9 +83,14 @@
                     Promovemos un entorno digital seguro, responsable y libre de
                     riesgos para todos los usuarios.
                 </p>
-                <button className="px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-none hover:bg-blue-700 transition">
+                <a
+                    href="https://www.mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/720:Internet-Sano-una-estrategia-para-proteger-la-identidad-de-ninos-y-jovenes-en-la-red"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-none hover:bg-blue-700 transition"
+                    >
                     Más información
-                </button>
+                </a>
             </div>
             </div>
         </div>

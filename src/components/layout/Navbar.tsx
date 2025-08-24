@@ -9,6 +9,8 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ThemeToggle } from "../others/ThemeToggle";
+import { cn } from "@/lib/utils";
+
 
 interface Item {
   name: string;
@@ -17,13 +19,14 @@ interface Item {
 
 const items: Item[] = [
   { name: "Planes", link: "/products" },
+  { name: "Television", link: "/tele" },
   { name: "About us", link: "/about" },
   { name: "Pricing", link: "/pricing" },
   { name: "FAQ", link: "/faq" },
   { name: "Contact", link: "/contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({classnameText = ""}) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -49,7 +52,10 @@ export default function Navbar() {
               <NavigationMenuLink asChild>
                 <Link
                   to={item.link}
-                  className="text-sm font-medium px-3 py-2 rounded-md hover:bg-accent transition-colors"
+className={cn(
+  "text-sm font-medium px-3 py-2 rounded-md hover:bg-accent transition-colors",
+  classnameText
+)}
                 >
                   {item.name}
                 </Link>

@@ -82,7 +82,7 @@ export default function Plans() {
         <Navbar classnameText={"text-white"} />
         <section className="relative text-white text-center py-20 px-6 md:px-12 lg:px-20 shadow-lg">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-wide drop-shadow-lg">
-            PLANES DE INTERNET
+            PLANES DE INTERNET *
           </h2>
           <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-gray-200">
             Elige el plan que mejor se adapte a tus necesidades y disfruta de

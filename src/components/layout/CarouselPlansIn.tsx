@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, ChevronRight, Phone, Zap } from "lucide-react";
@@ -8,7 +10,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Button } from "../ui/button";
 import { Badge } from "../ui/badge";
 
 interface Plan {
@@ -24,30 +25,30 @@ interface Plan {
 const plans: Plan[] = [
   {
     id: 1,
-    name: "Plan Básico",
-    price: "$65.000/mes",
+    name: "Plan Esencial",
+    price: "$60.000/mes",
     speed: "100 Mbps",
     features: [
-      "Canales premium HD",
       "Velocidad: 100 Mbps",
       "Modem 5G",
       "Megas simétricas",
+      "Soporte técnico 24/7",
     ],
-    tvIncluded: true,
+    tvIncluded: false,
     recommended: true,
   },
   {
     id: 2,
-    name: "Plan Avanzado",
-    price: "$75.000/mes",
+    name: "Plan Plus",
+    price: "$70.000/mes",
     speed: "150 Mbps",
     features: [
-      "Canales premium HD",
       "Velocidad: 150 Mbps",
       "Modem 5G",
       "Megas simétricas",
+      "Soporte técnico 24/7",
     ],
-    tvIncluded: true,
+    tvIncluded: false,
   },
   {
     id: 3,
@@ -55,20 +56,20 @@ const plans: Plan[] = [
     price: "$80.000/mes",
     speed: "200 Mbps",
     features: [
-      "Canales premium HD",
       "Velocidad: 200 Mbps",
       "Modem 5G",
       "Megas simétricas",
+      "Soporte técnico 24/7",
     ],
-    tvIncluded: true,
+    tvIncluded: false,
   },
   {
     id: 4,
-    name: "Plan Internet Básico",
-    price: "$45.000/mes",
-    speed: "50 Mbps",
+    name: "Plan Ultra",
+    price: "$100.000/mes",
+    speed: "300 Mbps",
     features: [
-      "Velocidad: 50 Mbps",
+      "Velocidad: 300 Mbps",
       "Modem 5G",
       "Megas simétricas",
       "Soporte técnico 24/7",
@@ -77,17 +78,16 @@ const plans: Plan[] = [
   },
   {
     id: 5,
-    name: "Plan Familiar",
-    price: "$90.000/mes",
-    speed: "250 Mbps",
+    name: "Plan Mega",
+    price: "$120.000/mes",
+    speed: "400 Mbps",
     features: [
-      "Canales premium HD",
-      "Velocidad: 250 Mbps",
-      "Modem 5G avanzado",
+      "Velocidad: 400 Mbps",
+      "Modem 5G",
       "Megas simétricas",
-      "Control parental",
+      "Soporte técnico 24/7",
     ],
-    tvIncluded: true,
+    tvIncluded: false,
   },
 ];
 
@@ -95,16 +95,8 @@ export default function PlansCarousel() {
   const [selectedPlan, setSelectedPlan] = useState<number | null>(null);
 
   return (
-    <section className="w-full py-10 sm:py-12 lg:py-16">
+    <div className="bg-muted w-full py-10 sm:py-12 lg:py-16 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-center mb-4">
-          Nuestros Planes
-        </h2>
-        <p className="text-sm sm:text-base lg:text-lg text-muted-foreground text-center mb-10">
-          Elige el plan que mejor se adapte a ti y comienza a disfrutar de la
-          mejor conexión.
-        </p>
-
         <Carousel opts={{ align: "start", loop: true }} className="relative">
           <CarouselContent className="py-6">
             {plans.map((plan) => (
@@ -246,35 +238,12 @@ export default function PlansCarousel() {
               </div>
             </CarouselItem>
           </CarouselContent>
-
           {/* Flechas de navegación */}
           <CarouselPrevious className="left-2 bg-white shadow-md hover:bg-gray-100" />
           <CarouselNext className="right-2 bg-white shadow-md hover:bg-gray-100" />
         </Carousel>
-
-        {/* CTA final */}
-        <div className="mt-10 sm:mt-12 text-center px-4">
-          {/* <p className="text-xs sm:text-sm lg:text-base text-secondary-foreground">
-            ¿Necesitas un plan personalizado?{" "}
-            <a
-              href="#"
-              className="text-[#1460ff] font-semibold hover:underline"
-            >
-              Contáctanos
-            </a>
-          </p>*/}
-          {/* Botón */}
-          <Button
-            variant={"gradient"}
-            size="lg"
-            className=" text-sm sm:text-base"
-          >
-            <Phone className="h-5 w-5 mr-2" />
-            Descubre nuestros planes
-            <ChevronRight className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
+        
       </div>
-    </section>
+    </div>
   );
 }

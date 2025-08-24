@@ -17,6 +17,7 @@ import {
   Globe,
   Headphones,
 } from "lucide-react";
+import { ArrowUpDown } from "lucide-react";
 
 // Definir la interfaz para los items
 interface BenefitItem {
@@ -38,18 +39,25 @@ const benefits: BenefitItem[] = [
     gradient: "from-blue-500 to-blue-700",
   },
   {
-    title: "TV en Alta Definición",
-    description: "Más de 80 canales HD y contenido on-demand ilimitado.",
-    icon: Tv,
-    color: "bg-purple-500",
-    gradient: "from-purple-500 to-purple-700",
-  },
-  {
     title: "Tecnología 5G",
     description: "Conectividad de última generación con cobertura garantizada.",
     icon: Zap,
     color: "bg-green-500",
     gradient: "from-green-500 to-green-700",
+  },
+  {
+    title: "Megas Simétricas",
+    description: "Navegación rápida y eficiente, tanto en descarga como en subida.",
+    icon: ArrowUpDown,
+    color: "bg-orange-500",
+    gradient: "from-orange-500 to-orange-700",
+  },
+  {
+    title: "Modems WIFI 6",
+    description: "Destacamos en velocidad, llevando mas de 700Mbps via wifi.",
+    icon: Tv,
+    color: "bg-purple-500",
+    gradient: "from-purple-500 to-purple-700",
   },
   {
     title: "Soporte 24/7",
@@ -61,7 +69,7 @@ const benefits: BenefitItem[] = [
   {
     title: "Multi-dispositivo",
     description:
-      "Conecta hasta 20 dispositivos simultáneamente sin pérdida de velocidad.",
+      "Conecta dispositivos simultáneamente sin pérdida de velocidad.",
     icon: Users,
     color: "bg-indigo-500",
     gradient: "from-indigo-500 to-indigo-700",
@@ -74,11 +82,12 @@ const benefits: BenefitItem[] = [
     color: "bg-amber-500",
     gradient: "from-amber-500 to-amber-700",
   },
+  
 ];
 
 export default function BenefitsGrid() {
   return (
-    <section className=" w-full pt-12 pb-8 md:pb-12">
+    <section className="bg-muted w-full pt-12 pb-8 md:pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
