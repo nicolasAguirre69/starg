@@ -1,4 +1,6 @@
 import Autoplay from "embla-carousel-autoplay";
+import GraphBackground from "./nodos";
+
 import {
   Carousel,
   CarouselContent,
@@ -39,6 +41,8 @@ export default function CarouselChannels() {
   return (
   <section className="w-full relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white overflow-hidden py-12">
   <div className="container mx-auto px-4 md:px-8 lg:px-12">
+    
+    <GraphBackground />
     {/* Encabezado */}
     <div className="text-center mb-10 max-w-3xl mx-auto text-white">
       <h1 className="text-3xl md:text-7xl font-extrabold tracking-tight mb-4 text-center text-white">

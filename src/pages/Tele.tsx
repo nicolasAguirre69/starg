@@ -2,75 +2,8 @@ import Navbar from "@/components/layout/Navbar";
 import CarouselPlansIn from "@/components/layout/CarouselPlansIn";
 import BenefitsI from "@/components/layout/BenefitsI";
 import { motion } from "framer-motion";
-import { useState } from "react";
-
-function GraphBackground() {
-  const [hovered, setHovered] = useState<number | null>(null);
-
-  const nodes = [...Array(25)].map(() => ({
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-  }));
-
-  return (
-    <div className="absolute inset-0 w-full h-full overflow-hidden">
-      {/* Líneas */}
-      <svg className="absolute inset-0 w-full h-full">
-        {nodes.map((a, i) =>
-          nodes.map((b, j) => {
-            if (i >= j) return null; // evitar duplicados
-            const dx = a.x - b.x;
-            const dy = a.y - b.y;
-            const dist = Math.sqrt(dx * dx + dy * dy);
-            if (dist < 25) {
-              return (
-                <line
-                  key={`${i}-${j}`}
-                  x1={`${a.x}%`}
-                  y1={`${a.y}%`}
-                  x2={`${b.x}%`}
-                  y2={`${b.y}%`}
-                  stroke="white"
-                  strokeOpacity={0.15}
-                  strokeWidth={1}
-                />
-              );
-            }
-            return null;
-          })
-        )}
-      </svg>
-
-      {/* Nodos */}
-      {nodes.map((node, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-3 h-3 rounded-full bg-white"
-          style={{
-            top: `${node.y}%`,
-            left: `${node.x}%`,
-            transform: "translate(-50%, -50%)",
-          }}
-          whileHover={{
-            scale: 1.8,
-            backgroundColor: "#34d399",
-            boxShadow: "0px 0px 10px rgba(52, 211, 153, 0.8)",
-          }}
-          onHoverStart={() => setHovered(i)}
-          onHoverEnd={() => setHovered(null)}
-          animate={{
-            opacity: [0.3, 1, 0.3],
-          }}
-          transition={{
-            duration: 3 + Math.random() * 2,
-            repeat: Infinity,
-            repeatType: "mirror",
-          }}
-        />
-      ))}
-    </div>
-  );
-}
+import { useState, useEffect, useRef } from "react";
+import GraphBackground from "@/components/layout/nodos";
 
 export default function Plans() {
   return (
