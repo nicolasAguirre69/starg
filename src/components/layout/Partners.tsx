@@ -22,7 +22,7 @@ const partners: PartnerItem[] = [
     gradient: "from-orange-500 to-orange-700",
   },
   {
-    logo: "/img/Comservired.svg",
+    logo: "/img/comservired.png",
     link: "https://www.comservired.com",
     gradient: "from-green-500 to-green-700",
   },
@@ -30,6 +30,7 @@ const partners: PartnerItem[] = [
     logo: "/img/Mikrotik.svg",
     link: "https://Mikrotik.com/",
     gradient: "from-gray-500 to-gray-700",
+    
   },
 ];
 
@@ -56,14 +57,13 @@ export default function Partners() {
               className="group hover:shadow-lg transition-all duration-300 border-0 shadow-sm overflow-hidden flex flex-col items-center p-6"
             >
               {/* Contenedor del logo */}
-              <div className="bg-white p-4 rounded-xl flex items-center justify-center shadow-sm mb-4">
+              <div className=" p-4 rounded-xl flex items-center justify-center shadow-sm mb-4">
                 <img
                   src={partner.logo}
                   alt="logo"
-                  className="h-20 object-contain"
+                  className="h-30 object-contain"
                 />
               </div>
-
               {/* Botón */}
               <a
                 href={partner.link}

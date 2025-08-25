@@ -23,7 +23,7 @@ const items: Item[] = [
   { name: "Television", link: "/tele" },
   { name: "Sobre Nosotros", link: "/about" },
   { name: "Trabaja con Nosotros", link: "/TrabajaConNosotros" },
-  { name: "Test de Velocidad", link: "/TestDeVelocidad" },
+  { name: "Test de Velocidad", link: "/TestVelocidad" },
   { name: "Ubicanos", link: "/Ubicanos" },
 ];
 
@@ -70,11 +70,6 @@ export default function Navbar({classnameText = ""}) {
 
       {/* Botones */}
       <div className="flex gap-2 md:gap-3">
-        <Button variant="default" size="sm" className="hidden sm:flex">
-          Contact Us
-        </Button>
-        <ThemeToggle />
-
         {/* Mobile Menu Button */}
         <Button
           variant="ghost"
@@ -104,9 +99,6 @@ export default function Navbar({classnameText = ""}) {
                 {item.name}
               </Link>
             ))}
-            <Button variant="default" size="sm" className="mt-3 sm:hidden">
-              Contact Us
-            </Button>
           </nav>
         </div>
       )}

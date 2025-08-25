@@ -11,7 +11,6 @@ export default function Plans() {
       {/* Navbar + Fondo con grafo */}
       <div className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 overflow-hidden">
         <GraphBackground />
-
         <Navbar classnameText={"text-white"} />
         <section className="relative text-white text-center py-20 px-6 md:px-12 lg:px-20 shadow-lg">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-wide drop-shadow-lg">

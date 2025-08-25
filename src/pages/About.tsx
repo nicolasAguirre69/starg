@@ -1,6 +1,4 @@
 import Navbar from "@/components/layout/Navbar";
-import CarouselPlansTv from "@/components/layout/CarouselPlansTv";
-import BenefitsI from "@/components/layout/BenefitsI";
 import GraphBackground from "@/components/layout/nodos";
 import Partners from "@/components/layout/Partners";
 
@@ -36,7 +34,7 @@ export default function About() {
               personas.
             </p>
 
-            <h3 className="text-2xl font-bold text-blue-700 dark:text-yellow-400">
+            <h3 className="text-2xl font-bold text-blue-700 dark:text-white">
               Nuestra esencia: Familias primero
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -47,7 +45,7 @@ export default function About() {
               pensando en ti.
             </p>
 
-            <h3 className="text-2xl font-bold text-blue-700 dark:text-yellow-400">
+            <h3 className="text-2xl font-bold text-blue-700 dark:text-white">
               Trabajando de la mano con la comunidad
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -67,7 +65,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
           {/* Misión */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700 dark:text-yellow-400">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700 dark:text-white">
               Misión
             </h2>
             <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
@@ -80,7 +78,7 @@ export default function About() {
 
           {/* Visión */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700 dark:text-yellow-400">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-blue-700 dark:text-white">
               Visión
             </h2>
             <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
@@ -95,7 +93,7 @@ export default function About() {
 
       {/* Sección de Partners */}
       <section className="bg-muted dark:bg-gray-900 py-16 px-6 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto text-center space-y-10">          
+        <div className="max-w-6xl mx-auto text-center space-y-10">
           <Partners />
         </div>
       </section>

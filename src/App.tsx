@@ -7,6 +7,8 @@ import Tele from "@/pages/Tele";
 import Contact from "@/pages/Contact";
 import Plans from "@/pages/Plans";
 import TrabajaConNosotros from "@/pages/TrabajaConNosotros";
+import TestVelocidad from "@/pages/TestVelocidad";
+import Ubicanos from "@/pages/Ubicanos";
 import NotFound from "@/pages/NotFound";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
@@ -23,7 +25,8 @@ const routes: RouteConfig[] = [
   { path: "/plans", component: Plans },
   { path: "/about", component: About },
   { path: "/contact", component: Contact },
-  
+  { path: "/Ubicanos", component: Ubicanos },
+  { path: "/TestVelocidad", component: TestVelocidad },
   { path: "/TrabajaConNosotros", component: TrabajaConNosotros },
   { path: "/Tele", component: Tele },
   { path: "*", component: NotFound },
