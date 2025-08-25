@@ -22,9 +22,9 @@ const items: Item[] = [
   { name: "Internet", link: "/plans" },
   { name: "Television", link: "/tele" },
   { name: "Sobre Nosotros", link: "/about" },
-  { name: "Pricing", link: "/pricing" },
-  { name: "FAQ", link: "/faq" },
-  { name: "Contact", link: "/contact" },
+  { name: "Trabaja con Nosotros", link: "/TrabajaConNosotros" },
+  { name: "Test de Velocidad", link: "/TestDeVelocidad" },
+  { name: "Ubicanos", link: "/Ubicanos" },
 ];
 
 export default function Navbar({classnameText = ""}) {
@@ -53,14 +53,14 @@ export default function Navbar({classnameText = ""}) {
             <NavigationMenuItem key={index}>
               <NavigationMenuLink asChild>
                 <Link
-  to={item.link}
-  className={cn(
-    "text-base md:text-lg font-semibold px-4 py-2 rounded-md hover:bg-accent transition-colors",
-    classnameText
-  )}
->
-  {item.name}
-</Link>
+                  to={item.link}
+                  className={cn(
+                    "text-base md:text-lg font-semibold px-4 py-2 rounded-md hover:bg-accent transition-colors",
+                    classnameText
+                  )}
+                >
+                  {item.name}
+                </Link>
 
               </NavigationMenuLink>
             </NavigationMenuItem>

@@ -1,11 +1,9 @@
 import Navbar from "@/components/layout/Navbar";
 import CarouselPlansTv from "@/components/layout/CarouselPlansTv";
 import BenefitsI from "@/components/layout/BenefitsI";
-import { motion } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
 import GraphBackground from "@/components/layout/nodos";
-
 import Requeriments from "@/components/layout/Requeriments";
+
 
 export default function Plans() {
   return (
@@ -28,7 +26,6 @@ export default function Plans() {
           </p>
         </section>
       </div>
-
       {/* Sección de Planes */}
       <div className="bg-muted">
         <CarouselPlansTv />

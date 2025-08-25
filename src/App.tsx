@@ -6,6 +6,7 @@ import About from "@/pages/About";
 import Tele from "@/pages/Tele";
 import Contact from "@/pages/Contact";
 import Plans from "@/pages/Plans";
+import TrabajaConNosotros from "@/pages/TrabajaConNosotros";
 import NotFound from "@/pages/NotFound";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
@@ -20,9 +21,10 @@ interface RouteConfig {
 const routes: RouteConfig[] = [
   { path: "/", component: Home, exact: true },
   { path: "/plans", component: Plans },
-
   { path: "/about", component: About },
   { path: "/contact", component: Contact },
+  
+  { path: "/TrabajaConNosotros", component: TrabajaConNosotros },
   { path: "/Tele", component: Tele },
   { path: "*", component: NotFound },
 ];
