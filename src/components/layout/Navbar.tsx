@@ -8,9 +8,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { ThemeToggle } from "../others/ThemeToggle";
 import { cn } from "@/lib/utils";
-
 
 interface Item {
   name: string;
@@ -27,7 +25,7 @@ const items: Item[] = [
   { name: "Ubicanos", link: "/Ubicanos" },
 ];
 
-export default function Navbar({classnameText = ""}) {
+export default function Navbar({ classnameText = "" }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -37,13 +35,12 @@ export default function Navbar({classnameText = ""}) {
         <img
           src="/logo.svg"
           alt="Company Logo"
-          className="w-36 md:w-44 h-auto object-contain" 
+          className="w-36 md:w-44 h-auto object-contain"
           onError={(e) => {
             e.currentTarget.src =
               "https://via.placeholder.com/180x60/3B82F6/FFFFFF?text=Logo";
           }}
         />
-
       </Link>
 
       {/* Desktop Navigation */}
@@ -61,7 +58,6 @@ export default function Navbar({classnameText = ""}) {
                 >
                   {item.name}
                 </Link>
-
               </NavigationMenuLink>
             </NavigationMenuItem>
           ))}

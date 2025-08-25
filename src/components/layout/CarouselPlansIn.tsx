@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, ChevronRight, Phone, Zap } from "lucide-react";
@@ -242,7 +241,6 @@ export default function PlansCarousel() {
           <CarouselPrevious className="left-2 bg-white shadow-md hover:bg-gray-100" />
           <CarouselNext className="right-2 bg-white shadow-md hover:bg-gray-100" />
         </Carousel>
-        
       </div>
     </div>
   );

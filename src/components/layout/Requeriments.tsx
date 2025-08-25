@@ -1,7 +1,9 @@
 import { Mail, FileText, User, Wifi } from "lucide-react";
 
+import type { ReactNode } from "react";
+
 interface Requirement {
-  icon: JSX.Element;
+  icon: ReactNode;
   title: string;
   description: string;
 }
@@ -11,22 +13,26 @@ export default function Requirements() {
     {
       icon: <User className="w-8 h-8 text-blue-600" />,
       title: "Documento de identidad",
-      description: "Copia de la cédula o documento oficial del titular del servicio.",
+      description:
+        "Copia de la cédula o documento oficial del titular del servicio.",
     },
     {
       icon: <FileText className="w-8 h-8 text-blue-600" />,
       title: "Recibo de servicio público",
-      description: "Copia de un recibo reciente (agua, luz, etc.) para verificar la dirección.",
+      description:
+        "Copia de un recibo reciente (agua, luz, etc.) para verificar la dirección.",
     },
     {
       icon: <Wifi className="w-8 h-8 text-blue-600" />,
       title: "Cobertura disponible",
-      description: "Verificamos que la dirección tenga cobertura para el servicio.",
+      description:
+        "Verificamos que la dirección tenga cobertura para el servicio.",
     },
     {
       icon: <Mail className="w-8 h-8 text-blue-600" />,
       title: "Pago inicial",
-      description: "Se requiere un pago de instalación o primer mes según el plan.",
+      description:
+        "Se requiere un pago de instalación o primer mes según el plan.",
     },
   ];
 
@@ -40,7 +46,8 @@ export default function Requirements() {
 
         {/* Subtítulo */}
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Para garantizar un proceso rápido y seguro, asegúrate de cumplir con los siguientes requisitos antes de solicitar tu plan.
+          Para garantizar un proceso rápido y seguro, asegúrate de cumplir con
+          los siguientes requisitos antes de solicitar tu plan.
         </p>
 
         {/* Grid de requisitos */}
@@ -54,7 +61,9 @@ export default function Requirements() {
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 {req.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">{req.description}</p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">
+                {req.description}
+              </p>
             </div>
           ))}
         </div>

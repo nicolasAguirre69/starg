@@ -5,18 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Wifi,
-  Tv,
-  Zap,
-  Shield,
-  Clock,
-  Users,
-  Cloud,
-  Smartphone,
-  Globe,
-  Headphones,
-} from "lucide-react";
+import { Wifi, Tv, Zap, Clock, Users, Headphones } from "lucide-react";
 
 // Definir la interfaz para los items
 interface BenefitItem {

@@ -1,8 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
 import GraphBackground from "@/components/layout/nodos";
-import CarouselChanels from "@/components/layout/ChanelsList";
-import handshakeGif from "@/assets/gif.gif";
-
 export default function Ubicanos() {
   return (
     <>

@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
@@ -19,7 +20,6 @@ export default function GraphBackground({
   linkDistance = 15,
   className = "",
 }: GraphBackgroundProps) {
-  const [hovered, setHovered] = useState<number | null>(null);
   const [nodes, setNodes] = useState<Node[]>(() =>
     [...Array(nodeCount)].map(() => ({
       x: Math.random() * 100,
@@ -101,8 +101,7 @@ export default function GraphBackground({
             backgroundColor: "#34d399",
             boxShadow: "0px 0px 10px rgba(52, 211, 153, 0.8)",
           }}
-          onHoverStart={() => setHovered(i)}
-          onHoverEnd={() => setHovered(null)}
+          
           animate={{
             opacity: [0.3, 1, 0.3],
           }}

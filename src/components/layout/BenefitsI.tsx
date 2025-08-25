@@ -5,18 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Wifi,
-  Tv,
-  Zap,
-  Shield,
-  Clock,
-  Users,
-  Cloud,
-  Smartphone,
-  Globe,
-  Headphones,
-} from "lucide-react";
+import { Wifi, Tv, Zap, Clock, Users, Headphones } from "lucide-react";
 import { ArrowUpDown } from "lucide-react";
 
 // Definir la interfaz para los items
@@ -47,7 +36,8 @@ const benefits: BenefitItem[] = [
   },
   {
     title: "Megas Simétricas",
-    description: "Navegación rápida y eficiente, tanto en descarga como en subida.",
+    description:
+      "Navegación rápida y eficiente, tanto en descarga como en subida.",
     icon: ArrowUpDown,
     color: "bg-orange-500",
     gradient: "from-orange-500 to-orange-700",
@@ -82,7 +72,6 @@ const benefits: BenefitItem[] = [
     color: "bg-amber-500",
     gradient: "from-amber-500 to-amber-700",
   },
-  
 ];
 
 export default function BenefitsGrid() {

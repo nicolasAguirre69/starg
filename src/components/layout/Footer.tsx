@@ -12,20 +12,27 @@ interface FooterColumn {
 }
 
 const Footer: React.FC = () => {
-  // Arreglo para la columna Company
   const companyLinks: FooterLink[] = [
-    { name: "Blog", href: "#" },
-    { name: "Contact us", href: "#" },
+    { name: "Internet", href: "plans" },
+    { name: "Television", href: "Tele" },
+    { name: "Sobre Nosotros", href: "about" },
+    { name: "Trabaja Con Nosotros", href: "TrabajaConNosotros" },
+    { name: "Test de velocidad", href: "TestVelocidad" },
+    { name: "Ubicanos", href: "Ubicanos" },
   ];
 
-  // Arreglo para la columna Legal
   const legalLinks: FooterLink[] = [
-    { name: "Terms of Service", href: "#" },
-    { name: "Privacy Policy", href: "#" },
+    { name: "Tamite PQR", href: "#" },
+    { name: "Manual de usuario", href: "#" },
+    { name: "Dignidad infantil", href: "#" },
+    { name: "politica de privacidad", href: "#" },
+    { name: "Terminos y condiciones", href: "#" },
+    { name: "Seguridad", href: "#" },
+    { name: "Regulacion TIC", href: "#" },
   ];
 
   const footerColumns: FooterColumn[] = [
-    { title: "Company", links: companyLinks },
+    { title: "Nosotros", links: companyLinks },
     { title: "Legal", links: legalLinks },
   ];
 
@@ -33,13 +40,17 @@ const Footer: React.FC = () => {
     <footer className=" bg-[#09090b] py-12 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
-          <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold text-[#fafafa] mb-2">
-              Nombre Empresa
-            </h2>
-            <p className="text-[#71717b]">eslogan</p>
+          {/* LOGO */}
+          <div className="mb-6 md:mb-0 flex flex-col items-center md:items-start">
+            <img
+              src="logo.svg"
+              alt="Star G Logo"
+              className="w-full max-w-[220px] h-auto mb-2"
+            />
+            <p className="text-[#fafafa] text-lg font-semibold">STAR G</p>
           </div>
 
+          {/* ENLACES */}
           <div className="grid grid-cols-2 gap-8">
             {footerColumns.map((column, index) => (
               <div key={index}>
@@ -62,25 +73,27 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="w-full flex items-center justify-center p-2 group">
-          <div className="relative w-full flex items-center justify-center rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105">
-            <img
-              src={`/logo.svg`}
-              alt="logo"
-              className="w-full object-contain grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-300"
-              loading="lazy"
-            />
-          </div>
-        </div>
+
         <Separator />
+
+        {/* COPYRIGHT */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
-            <span className="text-[#fafafa] mr-2">
-              © {new Date().getFullYear()}. Todos los derechos reservados. WEB
-              MASTER
+            <span className="text-[#fafafa] mr-2 text-sm md:text-base">
+              © {new Date().getFullYear()}. Todos los derechos reservados.
             </span>
           </div>
-          <div className="text-[#fafafa]">@Adprotv.co</div>
+          <div className="text-[#fafafa] text-sm md:text-base">
+            Desarrollado por:{" "}
+            <a
+              href="https://webmastercolombia.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              webmastercolombia
+            </a>
+          </div>
         </div>
       </div>
     </footer>
