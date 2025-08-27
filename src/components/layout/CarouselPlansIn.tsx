@@ -177,13 +177,20 @@ export default function PlansCarousel() {
                             ))}
                           </ul>
                         </div>
-                        <Button
-                          variant={"gradient"}
-                          size="lg"
-                          className="w-full text-sm sm:text-base"
+                        <a
+                          href="https://wa.me/573209457068?text=Hola,%20quiero%20contratar%20su%20servicio%20Vengo%20de%20su%20página%20web"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full"
                         >
-                          Contratar ahora
-                        </Button>
+                          <Button
+                            variant="gradient"
+                            size="lg"
+                            className="w-full text-sm sm:text-base"
+                          >
+                            Contratar ahora
+                          </Button>
+                        </a>
                       </CardContent>
                     </Card>
                   </div>
@@ -229,7 +236,7 @@ export default function PlansCarousel() {
                       className="w-full text-sm sm:text-base"
                     >
                       <Phone className="h-5 w-5 mr-2" />
-                      Contactar asesor
+                        Contactar asesor
                       <ChevronRight className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </CardContent>

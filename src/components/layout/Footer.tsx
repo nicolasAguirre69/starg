@@ -22,13 +22,13 @@ const Footer: React.FC = () => {
   ];
 
   const legalLinks: FooterLink[] = [
-    { name: "Tamite PQR", href: "#" },
-    { name: "Manual de usuario", href: "#" },
-    { name: "Dignidad infantil", href: "#" },
-    { name: "politica de privacidad", href: "#" },
-    { name: "Terminos y condiciones", href: "#" },
-    { name: "Seguridad", href: "#" },
-    { name: "Regulacion TIC", href: "#" },
+    { name: "Tamite PQR", href: "TramitePQR" },
+    { name: "Manual de usuario", href: "ManualDeUsuario" },
+    { name: "Dignidad infantil", href: "DignidadInfantil" },
+    { name: "politica de privacidad", href: "PoliticaDePrivacidad" },
+    { name: "Terminos y condiciones", href: "TerminosYCondiciones" },
+    { name: "Seguridad", href: "Seguridad" },
+    { name: "Regulacion TIC", href: "RegulacionTic" },
   ];
 
   const footerColumns: FooterColumn[] = [

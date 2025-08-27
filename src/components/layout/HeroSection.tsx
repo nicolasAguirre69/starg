@@ -1,4 +1,4 @@
-import CTAButtons from "@/components/layout/CTAButtons";
+
 import CarrouselLayout from "@/components/layout/CarouselLayout";
 
 export default function HeroSection() {
@@ -12,9 +12,6 @@ export default function HeroSection() {
         <p className="text-xl sm:text-2xl md:text-3xl text-muted-foreground leading-relaxed">
           Únete a la nueva era de la conectividad con un servicio que es sinónimo de velocidad y fiabilidad
         </p>
-        <div className="pt-4">
-          <CTAButtons />
-        </div>
       </div>
 
       {/* Imagen (demo screenshot) */}

@@ -106,7 +106,7 @@ function ContactForm() {
                     Teléfono
                   </h4>
                   <p className="text-muted-foreground text-sm md:text-base">
-                    +1 (234) 567-8900
+                    +57 (320) 945-7068
                   </p>
                 </div>
               </div>
@@ -120,7 +120,7 @@ function ContactForm() {
                     Email
                   </h4>
                   <p className="text-muted-foreground text-sm md:text-base">
-                    contacto@tuempresa.com
+                    info@adprotv.co
                   </p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ function ContactForm() {
                     Dirección
                   </h4>
                   <p className="text-muted-foreground text-sm md:text-base">
-                    Av. Principal #123, Ciudad
+                    Calle 38 C sur # 89 - 41, Patio Bonito, Bogota
                   </p>
                 </div>
               </div>
@@ -148,10 +148,10 @@ function ContactForm() {
                     Horario de atención
                   </h4>
                   <p className="text-muted-foreground text-sm md:text-base">
-                    Lun-Vie: 8:00 AM - 6:00 PM
+                    Lun-Vie: 8:00 AM - 5:00 PM
                   </p>
                   <p className="text-muted-foreground text-sm md:text-base">
-                    Sáb: 9:00 AM - 1:00 PM
+                    Sáb: 8:00 AM - 1:00 PM
                   </p>
                 </div>
               </div>

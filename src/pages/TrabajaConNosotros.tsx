@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Navbar from "@/components/layout/Navbar";
 import GraphBackground from "@/components/layout/nodos";
 import CarouselChanels from "@/components/layout/ChanelsList";
@@ -130,10 +131,18 @@ export default function TrabajaConNosotros() {
               a tus clientes.
             </p>
             <a
-              href="/contacto"
-              className="inline-block px-8 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold shadow-lg hover:scale-110 transform transition"
+              href="https://wa.me/573142386587?text=Hola,%20soy%20ISP%20quiero%20contratar%20su%20servicio%20Vengo%20de%20su%20página%20web"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
             >
-              Contáctanos
+              <Button
+                variant="gradient"
+                size="lg"
+                className="w-full text-sm sm:text-base"
+              >
+                Contratar ahora
+              </Button>
             </a>
           </div>
         </section>

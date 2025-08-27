@@ -25,21 +25,6 @@ export default function Description() {
             <span className="text-yellow-300">megas simétricas</span> para mantenerte siempre conectado.
           </p>
 
-          {/* Botones */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6">
-            <a
-              href="#planes"
-              className="px-6 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-2xl shadow-lg hover:bg-yellow-300 transition"
-            >
-              Ver Planes
-            </a>
-            <a
-              href="#contacto"
-              className="px-6 py-3 bg-white text-blue-900 font-semibold rounded-2xl shadow-lg hover:bg-gray-100 transition"
-            >
-              Contáctanos
-            </a>
-          </div>
         </div>
 
         {/* Imagen */}

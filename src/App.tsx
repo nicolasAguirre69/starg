@@ -10,6 +10,13 @@ import TrabajaConNosotros from "@/pages/TrabajaConNosotros";
 import TestVelocidad from "@/pages/TestVelocidad";
 import Ubicanos from "@/pages/Ubicanos";
 import NotFound from "@/pages/NotFound";
+import Seguridad from "@/pages/Seguridad";
+import TramitePQR from "@/pages/TramitePQR";
+import ManualDeUsuario from "@/pages/ManualDeUsuario";
+import DignidadInfantil from "@/pages/DignidadInfantil";
+import TerminosYCondiciones from "@/pages/TerminosYCondiciones";
+import PoliticaDePrivacidad from "@/pages/PoliticaDePrivacidad";
+import RegulacionTic from "@/pages/RegulacionTic";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 // Definir la interfaz para las rutas
@@ -29,6 +36,13 @@ const routes: RouteConfig[] = [
   { path: "/TestVelocidad", component: TestVelocidad },
   { path: "/TrabajaConNosotros", component: TrabajaConNosotros },
   { path: "/Tele", component: Tele },
+  { path: "/TramitePQR", component: TramitePQR },
+  { path: "/ManualDeUsuario", component: ManualDeUsuario },
+  { path: "/DignidadInfantil", component: DignidadInfantil },
+  { path: "/PoliticaDePrivacidad", component: PoliticaDePrivacidad },
+  { path: "/TerminosYCondiciones", component: TerminosYCondiciones },
+  { path: "/RegulacionTic", component: RegulacionTic },
+  { path: "/Seguridad", component: Seguridad },
   { path: "*", component: NotFound },
 ];
 

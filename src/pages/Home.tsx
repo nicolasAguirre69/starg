@@ -1,7 +1,7 @@
 import CarouselChanels from "@/components/layout/CarouselChanels";
 import HeroSection from "@/components/layout/HeroSection";
 import Navbar from "@/components/layout/Navbar";
-import CarouselPlans from "@/components/layout/CarouselPlans";
+import CarouselPlansTv from "@/components/layout/CarouselPlansTv";
 import Benefits from "@/components/layout/Benefits";
 import UserProtection from "@/components/layout/UserProtection";
 import ContactForm from "@/components/layout/ContactForm";
@@ -19,8 +19,8 @@ function Home() {
           <Description />
         </div>
         {/* Sección de Planes */}
-        <div className="bg-muted">
-          <CarouselPlans />
+        <div className="bg-muted">  
+          <CarouselPlansTv />
         </div>
       </div>
 

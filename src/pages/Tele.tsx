@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import CarouselPlansTv from "@/components/layout/CarouselPlansTv";
-import BenefitsI from "@/components/layout/BenefitsI";
+import BenefitsI from "@/components/layout/BenefitsTv";
 import GraphBackground from "@/components/layout/nodos";
 import Requeriments from "@/components/layout/Requeriments";
 

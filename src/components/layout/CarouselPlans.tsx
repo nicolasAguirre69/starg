@@ -25,7 +25,7 @@ const plans: Plan[] = [
   {
     id: 1,
     name: "Plan Básico",
-    price: "$65.000/mes",
+    price: "$60.000/mes",
     speed: "100 Mbps",
     features: [
       "Canales premium HD",
@@ -66,9 +66,9 @@ const plans: Plan[] = [
     id: 4,
     name: "Plan Internet Básico",
     price: "$45.000/mes",
-    speed: "50 Mbps",
+    speed: "300 Mbps",
     features: [
-      "Velocidad: 50 Mbps",
+      "Velocidad: 300 Mbps",
       "Modem 5G",
       "Megas simétricas",
       "Soporte técnico 24/7",
@@ -79,10 +79,10 @@ const plans: Plan[] = [
     id: 5,
     name: "Plan Familiar",
     price: "$90.000/mes",
-    speed: "250 Mbps",
+    speed: "400 Mbps",
     features: [
       "Canales premium HD",
-      "Velocidad: 250 Mbps",
+      "Velocidad: 400 Mbps",
       "Modem 5G avanzado",
       "Megas simétricas",
       "Control parental",
