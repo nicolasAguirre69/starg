@@ -131,12 +131,27 @@ function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-secondary-foreground text-sm md:text-base">
-                    Dirección
+                    Oficina Patio Bonito
                   </h4>
                   <p className="text-muted-foreground text-sm md:text-base">
-                    Calle 38 C sur # 89 - 41, Patio Bonito, Bogota
+                    Calle 38 C sur # 89 - 41, Patio Bonito, Bogotá
                   </p>
                 </div>
+                
+              </div>
+                          <div className="flex items-start">
+                <div className="bg-background p-2 md:p-3 rounded-full mr-3 md:mr-4 flex-shrink-0">
+                  <MapPin className="h-4 w-4 md:h-6 md:w-6 text-[#1460ff]" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-secondary-foreground text-sm md:text-base">
+                    Oficina Barrio Galán
+                  </h4>
+                  <p className="text-muted-foreground text-sm md:text-base">
+                    Cra 57 # 2B - 97, Barrio el Galán, Bogotá
+                  </p>
+                </div>
+                
               </div>
 
               <div className="flex items-start">
