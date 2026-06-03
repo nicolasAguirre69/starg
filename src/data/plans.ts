@@ -4,7 +4,7 @@ export const internetPlans: Plan[] = [
   {
     id: 1,
     name: "Plan Esencial",
-    price: "$60.000/mes",
+    price: "$65.000/mes",
     speed: "150 Mbps",
     features: [
       "Velocidad: 150 Mbps",
@@ -17,7 +17,7 @@ export const internetPlans: Plan[] = [
   {
     id: 2,
     name: "Plan Plus",
-    price: "$70.000/mes",
+    price: "$75.000/mes",
     speed: "200 Mbps",
     features: [
       "Velocidad: 200 Mbps",
@@ -31,7 +31,7 @@ export const internetPlans: Plan[] = [
   {
     id: 3,
     name: "Plan Turbo",
-    price: "$80.000/mes",
+    price: "$85.000/mes",
     speed: "300 Mbps",
     features: [
       "Velocidad: 300 Mbps",
@@ -44,7 +44,7 @@ export const internetPlans: Plan[] = [
   {
     id: 4,
     name: "Plan Ultra",
-    price: "$100.000/mes",
+    price: "$90.000/mes",
     speed: "400 Mbps",
     features: [
       "Velocidad: 400 Mbps",
@@ -57,7 +57,7 @@ export const internetPlans: Plan[] = [
   {
     id: 5,
     name: "Plan Mega",
-    price: "$120.000/mes",
+    price: "$95.000/mes",
     speed: "500 Mbps",
     features: [
       "Velocidad: 500 Mbps",
