@@ -5,9 +5,9 @@ export const internetPlans: Plan[] = [
     id: 1,
     name: "Plan Esencial",
     price: "$60.000/mes",
-    speed: "100 Mbps",
+    speed: "150 Mbps",
     features: [
-      "Velocidad: 100 Mbps",
+      "Velocidad: 150 Mbps",
       "Modem 5G",
       "Megas simétricas",
       "Soporte técnico 24/7",
