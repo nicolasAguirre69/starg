@@ -116,7 +116,7 @@ export const tvPlans: Plan[] = [
   {
     id: 4,
     name: "Plan 400 Megas Extremo",
-    price: "$105.000/mes",
+    price: "$90.000/mes",
     speed: "400 Mbps",
     features: [
       "Canales premium HD",
@@ -130,7 +130,7 @@ export const tvPlans: Plan[] = [
   {
     id: 5,
     name: "Plan 500 Megas Familiar",
-    price: "$125.000/mes",
+    price: "$95.000/mes",
     speed: "500 Mbps",
     features: [
       "Canales premium HD",

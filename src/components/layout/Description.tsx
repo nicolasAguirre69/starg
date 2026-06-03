@@ -12,7 +12,7 @@ export default function Description() {
         {/* Texto */}
         <div className="space-y-6 text-center lg:text-left order-2 lg:order-1">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
-            Orgullosamente Colombianos ðŸš€
+            Orgullosamente Colombianos. 
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
             Somos una empresa de{" "}
